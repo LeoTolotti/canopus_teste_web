@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export const api = axios.create({
-  baseURL: "http://localhost:5000",
+  baseURL: "https://canopus-teste-api.vercel.app",
 });
 
 export const loginUser = async (email, password) => {
