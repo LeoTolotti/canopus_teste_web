@@ -10,7 +10,7 @@ O aplicativo consiste em uma página web responsiva construída em React e uma A
 
 O projeto está hospedado e rodando para teste, no link abaixo.
 
-- [Canopus](https://testeimagens.netlify.app/)
+- [Canopus](https://canopus-teste-web.netlify.app/)
 
 ## Uso Local
 
