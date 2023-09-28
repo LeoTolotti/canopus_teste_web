@@ -1,4 +1,4 @@
-# Canopus -Teste
+# Canopus - Teste
 
 Projeto desenvolvido para empresa Canopus.
 Construí um aplicativo da web que permite cadastrar usuários, com opção de ser administrador ou não.
