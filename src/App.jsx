@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { createUser, imagensApi, loginUser, uploadImagem } from "./service/api";
 import "./App.css";
 const App = () => {
@@ -13,7 +13,6 @@ const App = () => {
   const [titulo, setTitulo] = useState(null);
   const [texto, setTexto] = useState(null);
   const [img, setImg] = useState(null);
-  const [atualizar, setAtualizar] = useState(true);
   const [loading, setLoading] = useState(false);
   const [slides, setSlides] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -136,7 +135,10 @@ const App = () => {
       {login && (
         <div className="conteudo">
           <div className="conteudo_imagem">
-            <img src="http://www.canopusonline.com/src/images/logoFinal.png"></img>
+            <img
+              src="http://www.canopusonline.com/src/images/logoFinal.png"
+              alt="Logo"
+            ></img>
             <div className="login">
               <div className="input">
                 <label htmlFor="email">E-mail:</label>
@@ -170,7 +172,10 @@ const App = () => {
       {newUser && (
         <div className="conteudo">
           <div className="conteudo_imagem">
-            <img src="http://www.canopusonline.com/src/images/logoFinal.png"></img>
+            <img
+              src="http://www.canopusonline.com/src/images/logoFinal.png"
+              alt="Logo"
+            ></img>
             <div className="login">
               <div className="input">
                 <label htmlFor="email">E-mail:</label>
@@ -216,7 +221,10 @@ const App = () => {
       {conteudo && (
         <div className="conteudo_interno">
           <div className="conteudo_imagem">
-            <img src="http://www.canopusonline.com/src/images/logoFinal.png"></img>
+            <img
+              src="http://www.canopusonline.com/src/images/logoFinal.png"
+              alt="Logo"
+            ></img>
           </div>
           {loginAdm && (
             <div className="login_botão_adm">
@@ -267,7 +275,10 @@ const App = () => {
           {loading && (
             <div className="containerStyles">
               <div className="imagem">
-                <img src={slides[currentIndex].img}></img>
+                <img
+                  src={slides[currentIndex].img}
+                  alt={slides[currentIndex].titulo}
+                ></img>
               </div>
               <div className="opcoes">
                 <div onClick={goToPrevious} className="leftArrowStyles">
